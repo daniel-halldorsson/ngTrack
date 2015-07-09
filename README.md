@@ -5,7 +5,11 @@ ngTrack provides a unified api for managing pixel tracking codes from providers 
 
 ##setup:
 ####step1
-include the pixel tracking code from your providers of choice in to the <head> of your index.html
+Include angular-track.js and the pixel tracking code from your providers of choice in to the <head> of your index.html
+
+```
+<script src="[path to library]/angular-track.js"></script>
+```
 
 #####facebook
 ```
@@ -33,12 +37,6 @@ window._fbq = window._fbq || [];
 ```
 
 ####step2
-Include angular-track.js in your index.html,
-```
-<script src="[path to library]/angular-track.js"></script>
-```
-
-####step3
 Inject 'ngTrack' in to your application
 ```
 angular.module('myApp', ['ngTrack']);
@@ -47,11 +45,12 @@ angular.module('myApp', ['ngTrack']);
 ####step4
 Include 'pixelTracking' into any controller where you wish to use it.
 ```
-myApp.controller('ExampleController', ['pixelTracking', function(pixelTracking) { }]);
+myApp.controller('ExampleController', ['trackingService', function(trackingService) { }]);
 ```
 
 
 #usage
+Simply pass in the provider name and tracking code to trackingService.track(), you can track via as many providers at a time as you wish.
 ```
 trackingService.track({
     facebook:"1234567891011",
