@@ -6,7 +6,7 @@ ngTrack provides a unified api for managing pixel tracking codes from providers 
 ##setup:
 include the pixel tracking code from your providers of choice in your index.html
 
-###facebook
+####facebook
 ```
 <!-- start facebook pixel tracking -->
 <script>
@@ -26,13 +26,13 @@ window._fbq = window._fbq || [];
 <!-- end facebook pixel tracking -->
  ```
 
-###google
+####google
 ```
 <script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
 ```
 
 
 ###todo:
--[x] google support
--[x] facebook support
--[] adroll support
+- [x] google support
+- [x] facebook support
+- [ ] adroll support
