@@ -4,7 +4,8 @@ Angular Multi-Provider Pixel Tracking
 ngTrack provides a unified api for managing pixel tracking codes from providers such as facebook, google and adroll.
 
 ##setup:
-1. include the pixel tracking code from your providers of choice in to the <head> of your index.html
+####step1
+include the pixel tracking code from your providers of choice in to the <head> of your index.html
 
 #####facebook
 ```
@@ -31,17 +32,20 @@ window._fbq = window._fbq || [];
 <script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
 ```
 
-2. Include angular-track.js in your index.html,
+####step2
+Include angular-track.js in your index.html,
 ```
 <script src="[path to library]/angular-track.js"></script>
 ```
 
-3. Inject 'ngTrack' in to your application
+####step3
+Inject 'ngTrack' in to your application
 ```
 angular.module('myApp', ['ngTrack']);
 ```  
 
-4. Include 'pixelTracking' into any controller where you wish to use it.
+####step4
+Include 'pixelTracking' into any controller where you wish to use it.
 ```
 myApp.controller('ExampleController', ['pixelTracking', function(pixelTracking) { }]);
 ```
