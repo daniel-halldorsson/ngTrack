@@ -64,3 +64,4 @@ trackingService.track({
 - [x] facebook support
 - [ ] adroll support
 - [ ] angular2 support
+- [ ] custom tracking data
