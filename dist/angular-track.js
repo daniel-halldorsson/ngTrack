@@ -23,7 +23,24 @@
             /* ---------------------------------------------------------------------
              * public methods
              * --------------------------------------------------------------------- */
-
+        
+            /**
+             * track()         - submit one or many pixel tracking codes to
+             *                   their respective providers at once
+             *                   expects an object with any of the keys: facebook, google, adroll
+             */
+            function track(pixels) {
+                if (_.has(pixels, 'facebook')) {
+                    trackFacebook(pixels.facebook, null);
+                }
+                if (_.has(pixels, 'google')) {
+                    trackGoogle(pixels.google, null);
+                }
+                if (_.has(pixels, 'adroll')) {
+                    trackAdroll(pixels.adroll, null);
+                }
+            }
+        
             /**
              * trackFacebook() - submit a pixel tracking code to facebook
              *                   accepts a facebook pixel_id see: https://developers.facebook.com/docs/ads-for-websites/conversion-pixel-code-migration
@@ -80,23 +97,6 @@
             function trackAdroll(adrollPixelId, customData) {
                 //todo
                 return false;
-            }
-
-            /**
-             * trackAdroll()   - submit one or many pixel tracking codes to
-             *                   their respective providers at once
-             *                   expects an object with any of the keys: facebook, google, adroll
-             */
-            function track(pixels) {
-                if (_.has(pixels, 'facebook')) {
-                    trackFacebook(pixels.facebook, null);
-                }
-                if (_.has(pixels, 'google')) {
-                    trackGoogle(pixels.google, null);
-                }
-                if (_.has(pixels, 'adroll')) {
-                    trackAdroll(pixels.adroll, null);
-                }
             }
 
         })
