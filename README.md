@@ -49,6 +49,8 @@ myApp.controller('ExampleController', ['trackingService', function(trackingServi
 
 
 #usage
+
+####basic tracking
 Simply pass in the provider name and tracking code to trackingService.track(), you can track via as many providers at a time as you like attached to any actions and can run multiple targetting campaigns.
 ```
 trackingService.track({
@@ -58,10 +60,20 @@ trackingService.track({
 });
 ```
 
+
+#### custom data
+If you need more control and want to use custom data, you can call the provider tracking function directly and supply
+a 'customData' object in a format the provider will accept, please see individual provider documentation on how to format this data
+```
+trackFacebook('1234567891011',{'value':'10.00','currency':'USD'});
+trackGoogle('9876543210',{'parameter1':'abc123','parameter2':'29.99'});
+etc...
+```
+
 ##todo:
 - [x] angular 1.x support
 - [x] google support
 - [x] facebook support
+- [x] custom tracking data
 - [ ] adroll support
 - [ ] angular2 support
-- [ ] custom tracking data
