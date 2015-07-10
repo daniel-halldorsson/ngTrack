@@ -64,10 +64,9 @@ trackingService.track({
 #### custom data
 If you need more control and want to use custom data, you can call the provider tracking function directly and supply
 a 'customData' object in a format the provider will accept, please see individual provider documentation on how to format this data
-**facebook**
-https://developers.facebook.com/docs/ads-for-websites/conversion-pixel-code-migration#overview
-**google** https://developers.google.com/adwords-remarketing-tag/asynchronous/
-**addroll** [coming soon]
+[facebook](https://developers.facebook.com/docs/ads-for-websites/conversion-pixel-code-migration#overview)
+[google](https://developers.google.com/adwords-remarketing-tag/asynchronous/)
+[addroll](#)
 
 ```
 trackFacebook('1234567891011',{'value':'10.00','currency':'USD'});
