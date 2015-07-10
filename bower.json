@@ -1,0 +1,22 @@
+{
+    "name": "ngTrack",
+    "version": "0.0.1",
+    "main": "dist/angular-track.js",
+    "ignore": [
+        "source",
+        "spec",
+        ".bowerrc",
+        ".gitignore",
+        ".jshintignore",
+        ".jshintrc",
+        "bower.json",
+        "gruntfile.js",
+        "package.json",
+        "README.md"
+    ],
+    "dependencies": {
+        "underscore": "~1.5.2"
+    },
+    "devDependencies": {
+    }
+}
