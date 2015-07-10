@@ -51,7 +51,7 @@ myApp.controller('ExampleController', ['trackingService', function(trackingServi
 #usage
 
 ####basic tracking
-Simply pass in the provider name and tracking code to trackingService.track(), you can track via as many providers at a time as you like attached to any actions and can run multiple targetting campaigns.
+Simply pass in the provider name and tracking code to trackingService.track(), you can track via as many providers at a time as you like.
 ```
 trackingService.track({
     facebook:"1234567891011",
@@ -67,7 +67,7 @@ a 'customData' object in a format the provider will accept, please see individua
 ```
 trackFacebook('1234567891011',{'value':'10.00','currency':'USD'});
 trackGoogle('9876543210',{'parameter1':'abc123','parameter2':'29.99'});
-etc...
+//etc...
 ```
 
 ##todo:
