@@ -42,7 +42,7 @@ Inject 'ngTrack' in to your application
 angular.module('myApp', ['ngTrack']);
 ```  
 
-Include 'pixelTracking' into any controller where you wish to use it.
+Include 'trackingService' into any controller where you wish to use it.
 ```
 myApp.controller('ExampleController', ['trackingService', function(trackingService) { }]);
 ```
